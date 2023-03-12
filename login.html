@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="login.css">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script src="login.js"></script>
+<!-- Sidebar -->
+<div class="menu">
+    <ul>
+        <div class="w3-teal">
+            <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+          </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="li-direita" ><a class="active" href="login.html">Login</a></li>
+      </ul>
+    </div>
+
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+<button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+<a href="autoestima.html" class="w3-bar-item w3-button">AUTOESTIMA COM FEFECITA</a>
+<a href="kailane.html" class="w3-bar-item w3-button">HOMENAGEM</a>
+<a href="tiktok.html" class="w3-bar-item w3-button">TIK TOK: O NOVO CÂNCER</a>
+</div>
+
+
+    <div class="overlay">
+        <!-- LOGN IN FORM by Omar Dsoky -->
+        <form>
+           <!--   con = Container  for items in the form-->
+           <div class="con">
+           <!--     Start  header Content  -->
+           <header class="head-form">
+              <h2>Log In</h2>
+              <!--     A welcome message or an explanation of the login form -->
+              <p>login here using your username and password</p>
+           </header>
+           <!--     End  header Content  -->
+           <br>
+           <div class="field-set">
+             
+              <!--   user name -->
+                 <span class="input-item">
+                   <i class="fa fa-user-circle"></i>
+                 </span>
+                <!--   user name Input-->
+                 <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
+             
+              <br>
+             
+                   <!--   Password -->
+             
+              <span class="input-item">
+                <i class="fa fa-key"></i>
+               </span>
+              <!--   Password Input-->
+              <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required>
+             
+        <!--      Show/hide password  -->
+             <span>
+                <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i>
+             </span>
+             
+             
+              <br>
+        <!--        buttons -->
+        <!--      button LogIn -->
+              <button class="log-in"> Log In </button>
+           </div>
+          
+        <!--   other buttons -->
+           <div class="other">
+        <!--      Forgot Password button-->
+              <button class="btn submits frgt-pass">Forgot Password</button>
+        <!--     Sign Up button -->
+              <button class="btn submits sign-up">Sign Up 
+        <!--         Sign Up font icon -->
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+              </button>
+        <!--      End Other the Division -->
+           </div>
+             
+        <!--   End Conrainer  -->
+          </div>
+          
+          <!-- End Form -->
+        </form>
+        </div>
+
+</body>
+</html>
